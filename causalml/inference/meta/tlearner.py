@@ -118,6 +118,8 @@ class BaseTLearner(BaseLearner):
         for group in self.t_groups:
             model_c = self.models_c[group]
             model_t = self.models_t[group]
+            print(model_c)
+            print(model_t)
             yhat_cs[group] = model_c.predict(X)
             yhat_ts[group] = model_t.predict(X)
 
